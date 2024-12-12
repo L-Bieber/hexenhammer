@@ -7,9 +7,9 @@ import Navbar from './components/navbar';
 
 function App() {
   return (
-    <div>
+    <div className='bg-slate-300'>
     <Navbar/>
-    <div className="flex flex-col items-center justify-center h-screen mb-40">
+    <div className="flex flex-col items-center justify-center h-screen mx-[5%]">
       <Map/>
     </div>
     </div>
