@@ -24,7 +24,9 @@ export default function Map() {
         />
         <Marker position={[50.928, 6.928]}>
           <Popup>
-            A pretty popup! <br /> Easily customizable.
+            City: Cologne<br/>
+            Printed in: 1520<br/>
+            Notable Witch Trial: 1639
           </Popup>
         </Marker>
       </MapContainer>
