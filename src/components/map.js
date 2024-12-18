@@ -29,6 +29,12 @@ export default function Map() {
             Notable Witch Trial: 1639
           </Popup>
         </Marker>
+        <Marker position={[50.111, 8.681]}>
+          <Popup>
+            City: Frankfurt am Main<br/>
+            Printed in: 1582
+          </Popup>
+        </Marker>
       </MapContainer>
     </div>
   );
