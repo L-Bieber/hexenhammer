@@ -2,6 +2,8 @@ import React from "react";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
+import { places } from "../tables/places";
+
 
 delete L.Icon.Default.prototype._getIconUrl;
 L.Icon.Default.mergeOptions({
@@ -22,19 +24,13 @@ export default function Map() {
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         />
-        <Marker position={[50.928, 6.928]}>
-          <Popup>
-            City: Cologne<br/>
-            Printed in: 1520<br/>
-            Notable Witch Trial: 1639
-          </Popup>
-        </Marker>
-        <Marker position={[50.111, 8.681]}>
-          <Popup>
-            City: Frankfurt am Main<br/>
-            Printed in: 1582
-          </Popup>
-        </Marker>
+        {Object.entries(places).map(([name, coords]) =>(
+          <Marker key={name} position={coords}>
+            <Popup>
+              Place: <strong>{name}</strong>
+            </Popup>
+          </Marker>
+        ))}
       </MapContainer>
     </div>
   );

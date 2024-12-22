@@ -24,7 +24,7 @@
 23;19;20;;Lyon;1595;Landry, Pierre;S;2;
 24;;;;Lyon;1596;;;;1620?
 25;;21;;;1598;;;;
-26;;;;Freiburg im Breisgau;1598;;;;
+26;;;;FreiburgimBreisgau;1598;;;;
 27;20;22;;Frankfurt;1600;Bassaeus, Nikolaus;S;2;
 28;21;23;;Lyon;1604;Landry, Pierre;S;3;
 29;;;;Lyon;1614;;;;
@@ -41,6 +41,6 @@
 ;25;;;Lyon;1620;Landry, Claude;S;2;
 ;;;;Lyon;1620;Landry, Claude;;3;
 ;;;;Lyon;1621;Landry, Claude;;3;
-;;;;Freiburg im Breisgau;1660;;;;
+;;;;FreiburgimBreisgau;1660;;;;
 ;;;;Lyon;1666;;;;
 ;26;25;;Lyon;1669;Bourgeat, Claude;S;3;
