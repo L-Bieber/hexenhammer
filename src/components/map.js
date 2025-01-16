@@ -1,8 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, use } from "react";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
-import { places } from "../tables/places";
+import { places } from "./places";
+import Papa from "papaparse";
+
 
 delete L.Icon.Default.prototype._getIconUrl;
 L.Icon.Default.mergeOptions({
@@ -12,8 +14,43 @@ L.Icon.Default.mergeOptions({
 });
 
 export default function Map() {
+  const [markers, setMarkers] = useState([]);
 
-  
+  useEffect(() => {
+    // Path to your CSV file
+    const csvPath = "/tables/malleus_prints.csv";
+
+    // Fetch and parse the CSV
+    fetch(csvPath)
+      .then((response) => response.text())
+      .then((csvText) => {
+        Papa.parse(csvText, {
+          header: true, // Treat the first row as headers
+          complete: (results) => {
+            // Extract relevant data from the CSV
+            const validMarkers = results.data
+              .map((row) => {
+                const city = row.place?.toLowerCase().trim(); // Standardize city names
+                const date = row.date?.trim();
+                const coordinates = places[city]; // Match city to coordinates in places
+
+                // Only include entries with valid city and coordinates
+                if (coordinates && date) {
+                  return { city, date, coordinates };
+                }
+                return null; // Exclude invalid entries
+              })
+              .filter((marker) => marker !== null); // Remove null entries
+
+            setMarkers(validMarkers); // Store markers in state
+          },
+          error: (err) => {
+            console.error("Error parsing CSV:", err);
+          },
+        });
+      });
+  }, []);
+
   return (
     <div className="w-full h-screen overflow-hidden">
       <MapContainer
@@ -25,10 +62,12 @@ export default function Map() {
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         />
-        {Object.entries(places).map(([name, coords]) =>(
-          <Marker key={name} position={coords}>
+        {markers.map((marker, index) => (
+          <Marker key={index} position={marker.coordinates}>
             <Popup>
-              Place: <strong>{name}</strong>
+                <strong>Place:</strong>{marker.city}
+                <br />
+                <strong>Date:</strong>{marker.date}
             </Popup>
           </Marker>
         ))}
