@@ -1,46 +1,46 @@
-﻿print_id;number_schnyder;number_hansen;number_hain;place;date;print;edition;volumes;notes
-01;1;1;9238;Speier;15.04.1487;Drach, Peter;E;1;vor datum
-02;2;2;9239;Speier;1491;Drach, Peter;E;1;vor datum
-03;;;;Basel;1493;Amorbach, Johann;;;
-04;3;3;9240;Speier;1494;Drach, Peter;E;1;
-05;4;6;9245;Nürnberg;17.03.1494;Koberger, Anton;E;1;
-06;5;7;9244;Köln;24.11.1494;Koelhoff, Johannes;E;1;
-07;;;;Paris;1497;Petit, Jean;E;1;
-08;7;4;9241;;1500;? Hochfeder, Kaspar;E;1;in Metz oder Nürnberg
-09;8;9;;Köln;1511;von Neuss, Heinrich;E;1;
-10;9;5;;Paris;? 1517;Petit, Jean;E;1;
-11;10;10;;Lyon;1519;Marion, Jean;E;1;
-12;11;11;;Nürnberg;1519;Peypus, Friedrich;E;1;
-13;;12;;Nürnberg;1520;Peypus, Friedrich;E;1;
-14;12;13;;Köln;1520;Gymnicus, Johannes;E;1;
-15;13;14;;Venedig;1574;;E;1;Ad candentis salamandrae insigne
-16;14;15;;Venedig;1576;;E;1;Ad candentis salamandrae insigne
-17;;;;Venedig;1579;;E;1;Ad candentis salamandrae insigne
-18;15;16;;Frankfurt;1580;Bassaeus, Nikolaus;S;1;
-19;16;17;;Frankfurt;1582;Bassaeus, Nikolaus;S;2;
-20;17;18;;Lyon;1584;Giunta, Jeanne;S;2;
-21;18;19;;Frankfurt;1588;Bassaeus, Nikolaus;S;2;
-22;;;;Frankfurt;1588;;;;
-23;19;20;;Lyon;1595;Landry, Pierre;S;2;
-24;;;;Lyon;1596;;;;1620?
-25;;21;;;1598;;;;
-26;;;;FreiburgimBreisgau;1598;;;;
-27;20;22;;Frankfurt;1600;Bassaeus, Nikolaus;S;2;
-28;21;23;;Lyon;1604;Landry, Pierre;S;3;
-29;;;;Lyon;1614;;;;
-30;;;;Lyon;1620;;;;
-31;;;;Lyon;1621;;;;
-32;;;;Lyon;1614;Landry, Pierre;E;3;wahrscheinlich selbes wie print_id 34
-33;;;;Lyon;1615;Landry, Pierre;;3;
-34;22;;;Lyon;1614;Landry, Pierre;S;3;
-;22;;;Lyon;1615;Landry, Pierre;S;3;
-;23;;;Lyon;1615;Landry, Pierre;S;3;
-;23;;;Lyon;1615;Landry, Pierre;S;3;
-;23;;;Lyon;1614;Landry, Pierre;S;3;
-;24;24;;Lyon;1615;Landry, Pierre & Claude;S;3;1615-1620
-;25;;;Lyon;1620;Landry, Claude;S;2;
-;;;;Lyon;1620;Landry, Claude;;3;
-;;;;Lyon;1621;Landry, Claude;;3;
-;;;;FreiburgimBreisgau;1660;;;;
-;;;;Lyon;1666;;;;
-;26;25;;Lyon;1669;Bourgeat, Claude;S;3;
+print_id,number_schnyder,number_hansen,number_hain,place,date,print,edition,volumes,notes
+1.0,1.0,1.0,9238.0,Speier,15.04.1487,"Drach, Peter",E,1.0,vor datum
+2.0,2.0,2.0,9239.0,Speier,1491,"Drach, Peter",E,1.0,vor datum
+3.0,,,,Basel,1493,"Amorbach, Johann",,,
+4.0,3.0,3.0,9240.0,Speier,1494,"Drach, Peter",E,1.0,
+5.0,4.0,6.0,9245.0,Nürnberg,17.03.1494,"Koberger, Anton",E,1.0,
+6.0,5.0,7.0,9244.0,Köln,24.11.1494,"Koelhoff, Johannes",E,1.0,
+7.0,,,,Paris,1497,"Petit, Jean",E,1.0,
+8.0,7.0,4.0,9241.0,,1500,"? Hochfeder, Kaspar",E,1.0,in Metz oder Nürnberg
+9.0,8.0,9.0,,Köln,1511,"von Neuss, Heinrich",E,1.0,
+10.0,9.0,5.0,,Paris,? 1517,"Petit, Jean",E,1.0,
+11.0,10.0,10.0,,Lyon,1519,"Marion, Jean",E,1.0,
+12.0,11.0,11.0,,Nürnberg,1519,"Peypus, Friedrich",E,1.0,
+13.0,,12.0,,Nürnberg,1520,"Peypus, Friedrich",E,1.0,
+14.0,12.0,13.0,,Köln,1520,"Gymnicus, Johannes",E,1.0,
+15.0,13.0,14.0,,Venedig,1574,,E,1.0,Ad candentis salamandrae insigne
+16.0,14.0,15.0,,Venedig,1576,,E,1.0,Ad candentis salamandrae insigne
+17.0,,,,Venedig,1579,,E,1.0,Ad candentis salamandrae insigne
+18.0,15.0,16.0,,Frankfurt,1580,"Bassaeus, Nikolaus",S,1.0,
+19.0,16.0,17.0,,Frankfurt,1582,"Bassaeus, Nikolaus",S,2.0,
+20.0,17.0,18.0,,Lyon,1584,"Giunta, Jeanne",S,2.0,
+21.0,18.0,19.0,,Frankfurt,1588,"Bassaeus, Nikolaus",S,2.0,
+22.0,,,,Frankfurt,1588,,,,
+23.0,19.0,20.0,,Lyon,1595,"Landry, Pierre",S,2.0,
+24.0,,,,Lyon,1596,,,,1620?
+25.0,,21.0,,,1598,,,,
+26.0,,,,FreiburgimBreisgau,1598,,,,
+27.0,20.0,22.0,,Frankfurt,1600,"Bassaeus, Nikolaus",S,2.0,
+28.0,21.0,23.0,,Lyon,1604,"Landry, Pierre",S,3.0,
+29.0,,,,Lyon,1614,,,,
+30.0,,,,Lyon,1620,,,,
+31.0,,,,Lyon,1621,,,,
+32.0,,,,Lyon,1614,"Landry, Pierre",E,3.0,wahrscheinlich selbes wie print_id 34
+33.0,,,,Lyon,1615,"Landry, Pierre",,3.0,
+34.0,22.0,,,Lyon,1614,"Landry, Pierre",S,3.0,
+,22.0,,,Lyon,1615,"Landry, Pierre",S,3.0,
+,23.0,,,Lyon,1615,"Landry, Pierre",S,3.0,
+,23.0,,,Lyon,1615,"Landry, Pierre",S,3.0,
+,23.0,,,Lyon,1614,"Landry, Pierre",S,3.0,
+,24.0,24.0,,Lyon,1615,"Landry, Pierre & Claude",S,3.0,1615-1620
+,25.0,,,Lyon,1620,"Landry, Claude",S,2.0,
+,,,,Lyon,1620,"Landry, Claude",,3.0,
+,,,,Lyon,1621,"Landry, Claude",,3.0,
+,,,,FreiburgimBreisgau,1660,,,,
+,,,,Lyon,1666,,,,
+,26.0,25.0,,Lyon,1669,"Bourgeat, Claude",S,3.0,

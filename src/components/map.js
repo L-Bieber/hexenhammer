@@ -1,9 +1,8 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 import { places } from "../tables/places";
-
 
 delete L.Icon.Default.prototype._getIconUrl;
 L.Icon.Default.mergeOptions({
@@ -13,6 +12,8 @@ L.Icon.Default.mergeOptions({
 });
 
 export default function Map() {
+
+  
   return (
     <div className="w-full h-screen overflow-hidden">
       <MapContainer
