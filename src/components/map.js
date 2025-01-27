@@ -13,35 +13,37 @@ L.Icon.Default.mergeOptions({
   shadowUrl: require("leaflet/dist/images/marker-shadow.png"),
 });
 
+const capitalizeFirstLetter = (string) => {
+  return string.charAt(0).toUpperCase() + string.slice(1);
+};
+
 export default function Map() {
   const [markers, setMarkers] = useState([]);
 
   useEffect(() => {
-    // Path to your CSV file
-    const csvPath = "/tables/malleus_prints.csv";
+    const printsPath = "/tables/malleus_prints.csv";
 
-    // Fetch and parse the CSV
-    fetch(csvPath)
+    fetch(printsPath)
       .then((response) => response.text())
       .then((csvText) => {
         Papa.parse(csvText, {
-          header: true, // Treat the first row as headers
+          header: true,
           complete: (results) => {
-            // Extract relevant data from the CSV
-            const validMarkers = results.data
-              .map((row) => {
-                const city = row.place?.toLowerCase().trim(); // Standardize city names
-                const date = row.date?.trim();
-                const coordinates = places[city]; // Match city to coordinates in places
+            const groupedMarkers = results.data.reduce((acc, row) => {
+              const city = row.place?.toLowerCase().trim();
+              const date = row.date?.trim();
+              const coordinates = places[city]; // Match city to coordinates in places
 
-                // Only include entries with valid city and coordinates
-                if (coordinates && date) {
-                  return { city, date, coordinates };
+              if (coordinates && date) {
+                if (!acc[city]) {
+                  acc[city] = { city: capitalizeFirstLetter(city), coordinates, dates: [] };
                 }
-                return null; // Exclude invalid entries
-              })
-              .filter((marker) => marker !== null); // Remove null entries
+                acc[city].dates.push(date);
+              }
+              return acc;
+            }, {});
 
+            const validMarkers = Object.values(groupedMarkers);
             setMarkers(validMarkers); // Store markers in state
           },
           error: (err) => {
@@ -65,9 +67,13 @@ export default function Map() {
         {markers.map((marker, index) => (
           <Marker key={index} position={marker.coordinates}>
             <Popup>
-                <strong>Place:</strong>{marker.city}
+                <strong>Place:</strong> {marker.city}
                 <br />
-                <strong>Date:</strong>{marker.date}
+                {marker.dates.map((date,i) =>(
+                  <div key={i}>
+                    <strong>Date:</strong> {date}
+                  </div>
+                ))}
             </Popup>
           </Marker>
         ))}
