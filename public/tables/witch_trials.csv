@@ -9,3 +9,14 @@ trial_id,place,date,start_date,end_date,name,gender,sentence,corpse_burned,notes
 8,Ankum,1636.0,,,"Neyenhaus, Elisabeth",w,,,near Osnabrück
 9,Biel ,1640.0,,,"Dybolt, Anna",w,sword,y,
 10,Luzern,1651.0,,,"Bidermann, Apollonia",w,strangled,y,
+11,Seesen,1666,,,"Tiemann",w,,,"near Braunschweig, no first name"
+12,Straßburg,,1669,1670,"Gruber, Cäcilia",w,sword,n,in Kärnten
+13,Zug,1672,,,"Eylin, Catharina",w,,,in Switzerland
+14,Zug,1681,,,"Petermann, Meinrad",m,strangled,y,in Switzerland
+15,Zug,1687,,,"Geisshüsler, Anna Maria",w,strangled,y,in Switzerland
+16,Biel,1690,,,"Möschler, Verena",w,sword,y,in Switzerland
+17,Zug,1691,,,"Günzin, Barbara",w,burned,,in Switzerland
+18,Mühldorf am Inn,1716,,,"Heilrad, Felix",m,,,
+19,Salzburg,,1717,1718,"Gell, Ruepp",m,exiled,n,
+20,Salzburg,1720,,,"Wind, Simon",m,sword,n,
+21,Innsbruck,1738,,,"Hofer, Christian",m,pardoned,n,
