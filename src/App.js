@@ -1,16 +1,19 @@
 import React from 'react';
 import 'leaflet/dist/leaflet.css';
 import './App.css';
-import Map from './components/map';
-import Navbar from './components/navbar';
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import Home from './pages/home';
+
 
 function App() {
   return (
-    <div className='bg-slate-300'>
-    <Navbar/>
-    <div className="flex flex-col items-center justify-center h-screen mx-[5%]">
-      <Map/>
-    </div>
+    <div className='app'>
+      <BrowserRouter>
+        <Routes>
+          <Route index element={<Home/>}/>
+          <Route path='/home' element={<Home/>}/>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
