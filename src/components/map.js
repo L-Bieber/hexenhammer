@@ -1,15 +1,17 @@
-import React from "react";
-import { MapContainer, TileLayer} from "react-leaflet";
+import React, { useState } from "react";
+import { MapContainer, TileLayer } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import Prints_places from "./prints_places";
 import Trials_places from "./trials_places";
 
-
 export default function Map() {
+  const [showPrints, setShowPrints] = useState(true);
+  const [showTrials, setShowTrials] = useState(true);
+
   return (
-    <div className="w-full h-screen overflow-hidden">
+    <div className="w-full h-screen overflow-hidden relative">
       <MapContainer
-        center={[50.863, 10.339]} // Coordinates for the map center
+        center={[50.863, 10.339]} 
         zoom={6}
         style={{ height: "90%", width: "100%" }}
       >
@@ -17,12 +19,26 @@ export default function Map() {
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         />
-        <Prints_places/>
-        <Trials_places/>
+        {showPrints && <Prints_places />}
+        {showTrials && <Trials_places />}
       </MapContainer>
-      <div className="text-xs">
-      Blue Icon made by Yuju from www.flaticon.com <br/>
-      Red Icon made by kmgdesign from www.flaticon.com
+      <div className="absolute top-0 right-0 m-4 p-2 bg-white shadow-lg rounded" style={{zIndex: 1000}}>
+        <button
+          className={`block mb-2 px-4 py-2 rounded ${showPrints ? 'bg-blue-500 text-white hover:bg-blue-300' : 'bg-gray-500 text-white hover:bg-gray-300'}`}
+          onClick={() => setShowPrints(!showPrints)}
+        >
+          Places of Printing
+        </button>
+        <button
+          className={`block mb-2 px-4 py-2 rounded ${showTrials ? 'bg-red-500 text-white hover:bg-red-300' : 'bg-gray-500 text-white hover:bg-gray-300'}`}
+          onClick={() => setShowTrials(!showTrials)}
+        >
+          Witch Trials
+        </button>
+      </div>
+      <div className="text-xs absolute bottom-0 left-0 m-4">
+        Blue Icon made by Yuju from www.flaticon.com <br />
+        Red Icon made by kmgdesign from www.flaticon.com
       </div>
     </div>
   );
