@@ -15,7 +15,7 @@ export const places = {
     lyon: [45.761048, 4.833648],
     venedig: [45.437758, 12.338355],
     frankfurt: [50.109890, 8.668725],
-    freiburgimBreisgau: [47.997050, 7.830431],
+    freiburgimbreisgau: [47.997050, 7.830431],
     seesen: [51.890240, 10.169404],
     straßburg: [48.575264, 7.748315],
     mühldorfaminn:[48.250258, 12.517646],
