@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 
 export default function Navbar(){
     return(
@@ -7,8 +9,12 @@ export default function Navbar(){
                 <div className="text-xl font-bold">Der Hexenhammer und Hexenverfolgungen</div>
 
                 <div className="flex space-x-4">
-                    <button className="hover:bg-blue-400 px-4 py-2 rounded">Button 1</button>
-                    <button className="hover:bg-blue-400 px-4 py-2 rounded">Button 2</button>
+                    <Link to="/map">
+                        <button className="hover:bg-blue-400 px-4 py-2 rounded">Map</button>
+                    </Link>
+                    <Link to="/test">
+                    <button className="hover:bg-blue-400 px-4 py-2 rounded">Lorem Ipsum</button>
+                    </Link>
                     <button className="hover:bg-blue-400 px-4 py-2 rounded">Button 3</button>
                     <button className="hover:bg-blue-400 px-4 py-2 rounded">Button 4</button>
                 </div>
