@@ -14,9 +14,9 @@ const TextFileViewer = () => {
         .catch((error) => console.error("Error loading text file:", error))
     }, []);
     return(
-      <div className='max-w-2/3 mx-auto p-4 mx-72'>
-        <pre className='whitespace-pre-wrap'>
-            <h1>TITLE</h1>
+      <div className='w-1/2 mx-auto p-4 mx-1/4'>
+        <pre className='whitespace-pre-wrap font-sans'>
+            <h1 className='text-xl my-7'>TITLE</h1>
             {text}
         </pre>
       </div>  
