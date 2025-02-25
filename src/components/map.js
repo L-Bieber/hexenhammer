@@ -3,6 +3,8 @@ import { MapContainer, TileLayer } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import Prints_places from "./prints_places";
 import Trials_places from "./trials_places";
+import Protestantisch from "./protestantisch";
+import Katholisch from "./katholisch";
 
 export default function Map() {
   const [showPrints, setShowPrints] = useState(true);
@@ -21,6 +23,8 @@ export default function Map() {
         />
         {showPrints && <Prints_places />}
         {showTrials && <Trials_places />}
+        <Protestantisch/>
+        <Katholisch/>
       </MapContainer>
       <div className="absolute top-0 right-0 m-4 p-2 bg-white shadow-lg rounded" style={{zIndex: 1000}}>
         <button
