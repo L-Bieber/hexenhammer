@@ -19,7 +19,7 @@ export default function Katholisch() {
       const geoJsonLayers = [
         L.geoJSON(Kath1, {
           style: {
-            color: "#5667b8",
+            color: "#7cc28f",
             weight: 2,
             opacity: 1,
             fillOpacity: 0.5,
@@ -27,7 +27,7 @@ export default function Katholisch() {
         }),
         L.geoJSON(Kath2, {
           style: {
-            color: "#5667b8",
+            color: "#7cc28f",
             weight: 2,
             opacity: 1,
             fillOpacity: 0.5,
@@ -35,7 +35,7 @@ export default function Katholisch() {
         }),
         L.geoJSON(Kath3, {
             style: {
-                color: "#5667b8",
+                color: "#7cc28f",
                 weight: 2,
                 opacity: 1,
                 fillOpacity: 0.5,
@@ -43,7 +43,7 @@ export default function Katholisch() {
         }),
         L.geoJSON(Kath4, {
             style: {
-                color: "#5667b8",
+                color: "#7cc28f",
                 weight: 2,
                 opacity: 1,
                 fillOpacity: 0.5,
@@ -51,7 +51,7 @@ export default function Katholisch() {
         }),
         L.geoJSON(Kath5, {
             style: {
-                color: "#5667b8",
+                color: "#7cc28f",
                 weight: 2,
                 opacity: 1,
                 fillOpacity: 0.5,
@@ -59,7 +59,7 @@ export default function Katholisch() {
         }),
         L.geoJSON(Kath6, {
             style: {
-                color: "#5667b8",
+                color: "#7cc28f",
                 weight: 2,
                 opacity: 1,
                 fillOpacity: 0.5,
@@ -67,7 +67,7 @@ export default function Katholisch() {
         }),
         L.geoJSON(Kath7, {
             style: {
-                color: "#5667b8",
+                color: "#7cc28f",
                 weight: 2,
                 opacity: 1,
                 fillOpacity: 0.5,
@@ -75,7 +75,7 @@ export default function Katholisch() {
         }),
         L.geoJSON(Kath8, {
             style: {
-                color: "#5667b8",
+                color: "#7cc28f",
                 weight: 2,
                 opacity: 1,
                 fillOpacity: 0.5,

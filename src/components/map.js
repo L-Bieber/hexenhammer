@@ -9,6 +9,8 @@ import Katholisch from "./katholisch";
 export default function Map() {
   const [showPrints, setShowPrints] = useState(true);
   const [showTrials, setShowTrials] = useState(true);
+  const [showCatholic, setShowCatholic] = useState(true);
+  const [showProtestant, setShowProtestant] = useState(true);
 
   return (
     <div className="w-full h-screen overflow-hidden relative">
@@ -23,8 +25,8 @@ export default function Map() {
         />
         {showPrints && <Prints_places />}
         {showTrials && <Trials_places />}
-        <Protestantisch/>
-        <Katholisch/>
+        {showProtestant && <Protestantisch/>}
+        {showCatholic && <Katholisch/>}
       </MapContainer>
       <div className="absolute top-0 right-0 m-4 p-2 bg-white shadow-lg rounded" style={{zIndex: 1000}}>
         <button
@@ -38,6 +40,18 @@ export default function Map() {
           onClick={() => setShowTrials(!showTrials)}
         >
           Witch Trials
+        </button>
+        <button 
+          className={`block mb-2 px-4 py-2 rounded ${showCatholic ? 'bg-green-500 text-white hover:bg-green-300' : 'bg-gray-500 text-white hover:bg-gray-300'}`}
+          onClick={() => setShowCatholic(!showCatholic)}
+        >
+          Catholic Imperial Circles
+        </button>
+        <button 
+          className={`block mb-2 px-4 py-2 rounded ${showProtestant ? 'bg-orange-500 text-white hover:bg-orange-300' : 'bg-gray-500 text-white hover:bg-gray-300'}`}
+          onClick={() => setShowProtestant(!showProtestant)}
+        >
+          Protestant Imperial Circles
         </button>
       </div>
       <div className="text-xs absolute">
