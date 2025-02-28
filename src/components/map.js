@@ -40,7 +40,7 @@ export default function Map() {
           Witch Trials
         </button>
       </div>
-      <div className="text-xs absolute bottom-0 left-0 m-4">
+      <div className="text-xs absolute">
         Blue Icon made by Yuju from www.flaticon.com <br />
         Red Icon made by kmgdesign from www.flaticon.com
       </div>

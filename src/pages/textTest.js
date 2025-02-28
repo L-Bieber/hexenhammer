@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import 'leaflet/dist/leaflet.css';
 import '../App.css';
 import Navbar from '../components/navbar';
+import Footer from '../components/footer';
 
 const TextFileViewer = () => {
     const [text, setText] = useState("");
@@ -25,11 +26,12 @@ const TextFileViewer = () => {
 
 export default function TextTest(){
     return(
-    <div className='bg-slate-300 min-h-screen'>
+    <div className='bg-slate-300 min-h-screen flex flex-col'>
         <Navbar/>
         <div className=''>
             <TextFileViewer/>
         </div>
+        <Footer/>
     </div>
     );
 }
