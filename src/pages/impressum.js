@@ -17,7 +17,7 @@ const TextFileViewer = () => {
     return(
       <div className='w-1/2 mx-auto p-4 mx-1/4'>
         <pre className='whitespace-pre-wrap font-sans'>
-            <h1 className='text-xl my-7'>TITLE</h1>
+            <h1 className='text-xl my-7'>Impressum</h1>
             {text}
         </pre>
       </div>  

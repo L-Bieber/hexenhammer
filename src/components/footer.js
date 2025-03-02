@@ -9,10 +9,7 @@ export default function Footer(){
                     <a href="/impressum" className="hover:underline">
                         Impressum
                     </a>
-                    <a href="/privacy" className="hover:underline">
-                        Datenschutz
-                    </a>
-                    <a href="/contact" className="hover:underline">
+                    <a href="mailto:lbieber@smail.uni-koeln.de" className="hover:underline">
                         Kontakt
                     </a>
                 </div>
