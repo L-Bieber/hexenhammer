@@ -13,9 +13,9 @@ export default function Navbar(){
                         <button className="hover:bg-blue-400 px-4 py-2 rounded">Map</button>
                     </Link>
                     <Link to="/test">
-                    <button className="hover:bg-blue-400 px-4 py-2 rounded">Lorem Ipsum</button>
+                    <button className="hover:bg-blue-400 px-4 py-2 rounded">Der Hexenhammer</button>
                     </Link>
-                    <button className="hover:bg-blue-400 px-4 py-2 rounded">Button 3</button>
+                    <button className="hover:bg-blue-400 px-4 py-2 rounded">Quellen</button>
                     <button className="hover:bg-blue-400 px-4 py-2 rounded">Button 4</button>
                 </div>
             </div>
