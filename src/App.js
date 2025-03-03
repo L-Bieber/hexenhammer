@@ -1,6 +1,7 @@
 import React from 'react';
 import 'leaflet/dist/leaflet.css';
 import './App.css';
+import { Analytics } from "@vercel/analytics/react"
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import Home from './pages/home';
 import TextTest from './pages/textTest';
@@ -10,6 +11,7 @@ import Impressum from './pages/impressum';
 function App() {
   return (
     <div className='app'>
+      <Analytics/>
       <BrowserRouter>
         <Routes>
           <Route index element={<Home/>}/>
