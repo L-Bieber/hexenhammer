@@ -42,7 +42,8 @@ export default function MapToggle({
           {showCatholicInfo && (
             <div className="absolute right-0 top-6 w-52 bg-white p-2 text-sm text-gray-700 shadow-lg rounded border border-gray-300 z-50">
                The categorization into Catholic and Protestant imperial circles is a rough estimation based on the information provied 
-               by <a href="https://ghdi.ghi-dc.org/map.cfm?map_id=2815" className="underline text-blue-400">this</a> map.
+               by <a href="https://ghdi.ghi-dc.org/map.cfm?map_id=2815" className="underline text-blue-400">this</a> map,
+               thus there may be Protestant areas in the Circles marked as Catholic and vice versa.
             </div>
           )}
         </div>
@@ -65,7 +66,8 @@ export default function MapToggle({
           {showProtestantInfo && (
             <div className="absolute right-0 top-6 w-52 bg-white p-2 text-sm text-gray-700 shadow-lg rounded border border-gray-300 z-40">
               The categorization into Catholic and Protestant imperial circles is a rough estimation based on the information provied 
-              by <a href="https://ghdi.ghi-dc.org/map.cfm?map_id=2815" className="underline text-blue-400">this</a> map.
+              by <a href="https://ghdi.ghi-dc.org/map.cfm?map_id=2815" className="underline text-blue-400">this</a> map,
+              thus there may be Catholic areas in the Circles marked as Protestant and vice versa.
             </div>
           )}
         </div>

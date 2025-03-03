@@ -34,11 +34,7 @@ export default function Map() {
         showTrials={showTrials} setShowTrials={setShowTrials}
         showCatholic={showCatholic} setShowCatholic={setShowCatholic}
         showProtestant={showProtestant} setShowProtestant={setShowProtestant}
-      />      
-      <div className="text-xs absolute">
-        Blue Icon made by Yuju from www.flaticon.com <br />
-        Red Icon made by kmgdesign from www.flaticon.com
-      </div>
+      /> 
     </div>
   );
 }
