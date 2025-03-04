@@ -15,14 +15,14 @@ export default function MapToggle({
         className={`block mb-2 px-4 py-2 rounded ${showPrints ? 'bg-blue-500 text-white hover:bg-blue-300' : 'bg-gray-500 text-white hover:bg-gray-300'}`}
         onClick={() => setShowPrints(!showPrints)}
       >
-        Places of Printing
+        Druckorte
       </button>
 
       <button
         className={`block mb-2 px-4 py-2 rounded ${showTrials ? 'bg-red-500 text-white hover:bg-red-300' : 'bg-gray-500 text-white hover:bg-gray-300'}`}
         onClick={() => setShowTrials(!showTrials)}
       >
-        Witch Trials
+        Hexenprozesse
       </button>
 
       <div className="relative flex items-center">
@@ -30,7 +30,7 @@ export default function MapToggle({
           className={`block mb-2 px-4 py-2 rounded flex-1 ${showCatholic ? 'bg-green-500 text-white hover:bg-green-300' : 'bg-gray-500 text-white hover:bg-gray-300'}`}
           onClick={() => setShowCatholic(!showCatholic)}
         >
-          Catholic Imperial Circles
+          Katholische Reichskreise
         </button>
         <div className="relative group ml-2">
           <button 
@@ -41,9 +41,9 @@ export default function MapToggle({
           </button>
           {showCatholicInfo && (
             <div className="absolute right-0 top-6 w-52 bg-white p-2 text-sm text-gray-700 shadow-lg rounded border border-gray-300 z-50">
-               The categorization into Catholic and Protestant imperial circles is a rough estimation based on the information provied 
-               by <a href="https://ghdi.ghi-dc.org/map.cfm?map_id=2815" className="underline text-blue-400">this</a> map,
-               thus there may be Protestant areas in the Circles marked as Catholic and vice versa.
+               Die Einteilung in Katholische und Protestantische Reichskreise basiert auf einer groben Schätzung der konfessionellen Mehrheiten basierend
+               auf <a href="https://ghdi.ghi-dc.org/map.cfm?map_id=2815" className="underline text-blue-400">dieser</a> Karte, trotzdem gab es auch in den 
+               als Katholisch markierten Reichskreisen Protestantische Gebiete und umgekehrt.
             </div>
           )}
         </div>
@@ -54,7 +54,7 @@ export default function MapToggle({
           className={`block mb-2 px-4 py-2 rounded flex-1 ${showProtestant ? 'bg-orange-500 text-white hover:bg-orange-300' : 'bg-gray-500 text-white hover:bg-gray-300'}`}
           onClick={() => setShowProtestant(!showProtestant)}
         >
-          Protestant Imperial Circles
+          Protestantische Reichskreise
         </button>
         <div className="relative group ml-2">
           <button 
@@ -65,9 +65,9 @@ export default function MapToggle({
           </button>
           {showProtestantInfo && (
             <div className="absolute right-0 top-6 w-52 bg-white p-2 text-sm text-gray-700 shadow-lg rounded border border-gray-300 z-40">
-              The categorization into Catholic and Protestant imperial circles is a rough estimation based on the information provied 
-              by <a href="https://ghdi.ghi-dc.org/map.cfm?map_id=2815" className="underline text-blue-400">this</a> map,
-              thus there may be Catholic areas in the Circles marked as Protestant and vice versa.
+              Die Einteilung in Katholische und Protestantische Reichskreise basiert auf einer groben Schätzung der konfessionellen Mehrheiten basierend
+               auf <a href="https://ghdi.ghi-dc.org/map.cfm?map_id=2815" className="underline text-blue-400">dieser</a> Karte, trotzdem gab es auch in den 
+               als Protestantisch markierten Reichskreisen Katholische Gebiete und umgekehrt.
             </div>
           )}
         </div>

@@ -56,12 +56,12 @@ export default function Prints_places() {
           stroke={false}
         >
           <Popup>
-            <strong>PRINT</strong><br />
-            <strong>Place:</strong> {marker.city}
+            <strong>DRUCKORT</strong><br />
+            <strong>Ort:</strong> {marker.city}
             <br />
             {marker.dates.map((date, i) => (
               <div key={i}>
-                <strong>Date:</strong> {date}
+                <strong>Jahr:</strong> {date}
               </div>
             ))}
           </Popup>
