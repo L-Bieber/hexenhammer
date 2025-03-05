@@ -1,22 +1,22 @@
 trial_id,place,date,start_date,end_date,name,gender,sentence,corpse_burned,notes
-1,Osnabrück,1583.0,,,"Meyers, Hille",w,burned,,
-2,Biel,,1597.0,1598.0,"Mathyß, Hans Heinrich",m,burned,,in Switzerland
-3,Goslar,1599.0,,,"Bulicher, Hans",m,burned,,and wife
+1,Osnabrück,1583.0,,,"Meyers, Hille",w,Verbrannt,,
+2,Biel,,1597.0,1598.0,"Mathyß, Hans Heinrich",m,Verbrannt,,in Switzerland
+3,Goslar,1599.0,,,"Bulicher, Hans",m,Verbrannt,,and wife
 4,Egeln,,1612.0,1613.0,"Lindemann, Orthien",w,,,near Magdeburg
-5,Zug,1615.0,,,"Kapeller, Ann",w,strangled,y,"in Switzerland, more victims"
-6,,1636.0,,,"Spegelberg, Grete",w,sword,,"near Osnabrück, 82 years old"
-7,Osnabrück,1636.0,,,"Voß, Gertraudt",w,sword,,
+5,Zug,1615.0,,,"Kapeller, Ann",w,Erdrosselt,y,"in Switzerland, more victims"
+6,,1636.0,,,"Spegelberg, Grete",w,Schwert,,"near Osnabrück, 82 years old"
+7,Osnabrück,1636.0,,,"Voß, Gertraudt",w,Schwert,,
 8,Ankum,1636.0,,,"Neyenhaus, Elisabeth",w,,,near Osnabrück
-9,Biel ,1640.0,,,"Dybolt, Anna",w,sword,y,
-10,Luzern,1651.0,,,"Bidermann, Apollonia",w,strangled,y,
+9,Biel,1640.0,,,"Dybolt, Anna",w,Schwert,y,
+10,Luzern,1651.0,,,"Bidermann, Apollonia",w,Erdrosselt,y,
 11,Seesen,1666,,,"Tiemann",w,,,"near Braunschweig, no first name"
-12,Straßburg,,1669,1670,"Gruber, Cäcilia",w,sword,n,in Kärnten
+12,Straßburg,,1669,1670,"Gruber, Cäcilia",w,Schwert,n,in Kärnten
 13,Zug,1672,,,"Eylin, Catharina",w,,,in Switzerland
-14,Zug,1681,,,"Petermann, Meinrad",m,strangled,y,in Switzerland
-15,Zug,1687,,,"Geisshüsler, Anna Maria",w,strangled,y,in Switzerland
-16,Biel,1690,,,"Möschler, Verena",w,sword,y,in Switzerland
-17,Zug,1691,,,"Günzin, Barbara",w,burned,,in Switzerland
+14,Zug,1681,,,"Petermann, Meinrad",m,Erdrosselt,y,in Switzerland
+15,Zug,1687,,,"Geisshüsler, Anna Maria",w,Erdrosselt,y,in Switzerland
+16,Biel,1690,,,"Möschler, Verena",w,Schwert,y,in Switzerland
+17,Zug,1691,,,"Günzin, Barbara",w,Verbrannt,,in Switzerland
 18,Mühldorf am Inn,1716,,,"Heilrad, Felix",m,,,
-19,Salzburg,,1717,1718,"Gell, Ruepp",m,exiled,n,
-20,Salzburg,1720,,,"Wind, Simon",m,sword,n,
-21,Innsbruck,1738,,,"Hofer, Christian",m,pardoned,n,
+19,Salzburg,,1717,1718,"Gell, Ruepp",m,Exiliert,n,
+20,Salzburg,1720,,,"Wind, Simon",m,Schwert,n,
+21,Innsbruck,1738,,,"Hofer, Christian",m,Freispruch,n,
