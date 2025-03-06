@@ -60,15 +60,17 @@ export default function Trials_places() {
           <Popup>
             <strong>Hexenprozess</strong><br/>
             <strong>Ort:</strong> {marker.city}
-            <br />
+            <br/>
+            --------------------------------- <br/>
             {marker.dates.map((date, i) => (
               <div key={i}>
                 <strong>Jahr:</strong> {date}<br />
                 {marker.sentences[i] &&(
                 <>
-                <strong>Urteil/Hinrichtungsmethode:</strong> {marker.sentences[i]}
+                <strong>Urteil/Hinrichtungsmethode:</strong> {marker.sentences[i]}<br/>
                 </>
                 )}
+                ---------------------------------
               </div>
             ))}
           </Popup>
