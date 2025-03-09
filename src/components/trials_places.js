@@ -12,7 +12,7 @@ export default function Trials_places() {
   const [markers, setMarkers] = useState([]);
 
   useEffect(() => {
-    const trialsPath = "/tables/witch_trials.csv";
+    const trialsPath = "/tables/witch_trials_combined.csv";
 
     fetch(trialsPath)
       .then((response) => response.text())
@@ -22,17 +22,23 @@ export default function Trials_places() {
           complete: (results) => {
             const groupedMarkers = results.data.reduce((acc, row) => {
               const city = row.place?.toLowerCase().trim();
+              const amount = parseInt(row.amount);
               const date = row.date?.trim();
-              const sentence = row.sentence?.trim();
               const coordinates = places[city];
 
-              if (coordinates && date) {
+              if (coordinates && !isNaN(amount)) {
                 if (!acc[city]) {
-                  acc[city] = { city: capitalizeFirstLetter(city), coordinates, dates: [], sentences: [] };
+                  acc[city] = {
+                    city: capitalizeFirstLetter(city),
+                    coordinates,
+                    dates: [],
+                    amount: 0,
+                  };
                 }
                 acc[city].dates.push(date);
-                acc[city].sentences.push(sentence);
+                acc[city].amount += amount;
               }
+
               return acc;
             }, {});
 
@@ -51,26 +57,20 @@ export default function Trials_places() {
         <CircleMarker
           key={index}
           center={marker.coordinates}
-          radius={Math.min(5 + marker.dates.length * 5, 100)} 
+          radius={Math.min(5 + marker.amount * 1, 50)} 
           color="red"
           fillColor="red"
-          fillOpacity={0.4} 
-          stroke={false} 
+          fillOpacity={0.4}
+          stroke={false}
         >
           <Popup>
-            <strong>Hexenprozess</strong><br/>
-            <strong>Ort:</strong> {marker.city}
-            <br/>
-            --------------------------------- <br/>
+            <strong>WITCH TRIAL</strong><br />
+            <strong>Place:</strong> {marker.city}<br />
+            <strong>Total Trials:</strong> {marker.amount}
+            <br />
             {marker.dates.map((date, i) => (
               <div key={i}>
-                <strong>Jahr:</strong> {date}<br />
-                {marker.sentences[i] &&(
-                <>
-                <strong>Urteil/Hinrichtungsmethode:</strong> {marker.sentences[i]}<br/>
-                </>
-                )}
-                ---------------------------------
+                <strong>Date:</strong> {date}
               </div>
             ))}
           </Popup>

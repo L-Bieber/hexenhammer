@@ -1,0 +1,46 @@
+trial_id,place,date,start_date,end_date,name,gender,sentence,corpse_burned,notes,amount
+1,Osnabrück,1583.0,,,"Meyers, Hille",w,Verbrannt,,,1
+2,Biel,,1597.0,1598.0,"Mathyß, Hans Heinrich",m,Verbrannt,,in Switzerland,1
+3,Goslar,1599.0,,,"Bulicher, Hans",m,Verbrannt,,and wife,1
+4,Egeln,,1612.0,1613.0,"Lindemann, Orthien",w,,,near Magdeburg,1
+5,Zug,1615.0,,,"Kapeller, Ann",w,Erdrosselt,y,"in Switzerland, more victims",1
+6,,1636.0,,,"Spegelberg, Grete",w,Schwert,,"near Osnabrück, 82 years old",1
+7,Osnabrück,1636.0,,,"Voß, Gertraudt",w,Schwert,,,1
+8,Ankum,1636.0,,,"Neyenhaus, Elisabeth",w,,,near Osnabrück,1
+9,Biel,1640.0,,,"Dybolt, Anna",w,Schwert,y,,1
+10,Luzern,1651.0,,,"Bidermann, Apollonia",w,Erdrosselt,y,,1
+11,Seesen,1666.0,,,Tiemann,w,,,"near Braunschweig, no first name",1
+12,Straßburg,,1669.0,1670.0,"Gruber, Cäcilia",w,Schwert,n,in Kärnten,1
+13,Zug,1672.0,,,"Eylin, Catharina",w,,,in Switzerland,1
+14,Zug,1681.0,,,"Petermann, Meinrad",m,Erdrosselt,y,in Switzerland,1
+15,Zug,1687.0,,,"Geisshüsler, Anna Maria",w,Erdrosselt,y,in Switzerland,1
+16,Biel,1690.0,,,"Möschler, Verena",w,Schwert,y,in Switzerland,1
+17,Zug,1691.0,,,"Günzin, Barbara",w,Verbrannt,,in Switzerland,1
+18,Mühldorf am Inn,1716.0,,,"Heilrad, Felix",m,,,,1
+19,Salzburg,,1717.0,1718.0,"Gell, Ruepp",m,Exiliert,n,,1
+20,Salzburg,1720.0,,,"Wind, Simon",m,Schwert,n,,1
+21,Innsbruck,1738.0,,,"Hofer, Christian",m,Freispruch,n,,1
+22,Mecklenburg,1570.0,1570.0,1700.0,,,,,,4000
+23,Westpommern,,,1700.0,,,,,,1
+24,Brandenburg,,,1618.0,,,,,,240
+25,Brandenburg,1618.0,1618.0,,,,,,,25
+26,Sachsen-Anhalt,1550.0,1550.0,1650.0,,,,,,200
+27,Quedlinburg,1550.0,1550.0,1650.0,,,,,,40
+28,Wernigerode,1550.0,1550.0,1650.0,,,,,,40
+29,Thüringen,1526.0,1526.0,1731.0,,,,,,1500
+30,Henneberg,1526.0,1526.0,1731.0,,,,,,750
+31,Coburg,1526.0,1526.0,1731.0,,,,,,230
+32,Georgenthal,1526.0,1526.0,1731.0,,,,,,50
+33,Mühlhausen,1526.0,1526.0,1731.0,,,,,,65
+34,Nordhausen,1526.0,1526.0,1731.0,,,,,,30
+35,Sachsen-Anhalt,1570.0,1570.0,1670.0,,,,,,750
+36,Vorderösterreich,1479.0,1479.0,1711.0,,,,,,1100
+37,Schwäbisch-Österreich,1493.0,1493.0,1711.0,,,,,,520
+38,Hohenberg,1493.0,1493.0,1711.0,,,,,,416
+39,Baden-Durlach,1522.0,1522.0,1579.0,,,,,,9
+40,Baden-Baden,,,1577.0,,,,,,26
+41,Baden-Baden,1577.0,1577.0,1580.0,,,,,,18
+42,Baden-Baden,1626.0,1626.0,1631.0,,,,,,244
+43,Bamberg,1612.0,1612.0,1619.0,,,,,,170
+44,Bamberg,1626.0,1626.0,1630.0,,,,,,630
+45,Bayern,,,,,,,,,1500
