@@ -57,20 +57,20 @@ export default function Trials_places() {
         <CircleMarker
           key={index}
           center={marker.coordinates}
-          radius={Math.min(5 + marker.amount * 1, 50)} 
+          radius={Math.min(5 + marker.amount * 0.5, 25)} 
           color="red"
           fillColor="red"
           fillOpacity={0.4}
           stroke={false}
         >
           <Popup>
-            <strong>WITCH TRIAL</strong><br />
-            <strong>Place:</strong> {marker.city}<br />
-            <strong>Total Trials:</strong> {marker.amount}
+            <strong>Hexenprozess</strong><br />
+            <strong>Ort:</strong> {marker.city}<br />
+            <strong>Anzahl der Prozesse:</strong> {marker.amount}
             <br />
             {marker.dates.map((date, i) => (
               <div key={i}>
-                <strong>Date:</strong> {date}
+                <strong>Jahr:</strong> {date}
               </div>
             ))}
           </Popup>
