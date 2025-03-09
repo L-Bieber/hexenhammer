@@ -25,6 +25,7 @@ export default function Trials_places() {
               const amount = parseInt(row.amount);
               const date = row.date?.trim();
               const coordinates = places[city];
+              const sentence = row.sentence?.trim();
 
               if (coordinates && !isNaN(amount)) {
                 if (!acc[city]) {
@@ -32,11 +33,17 @@ export default function Trials_places() {
                     city: capitalizeFirstLetter(city),
                     coordinates,
                     dates: [],
+                    sentences: [],
                     amount: 0,
                   };
                 }
-                acc[city].dates.push(date);
                 acc[city].amount += amount;
+                if (date) {
+                  acc[city].dates.push(date);
+                }
+                if (sentence) {
+                  acc[city].sentences.push(sentence);
+                }
               }
 
               return acc;
@@ -66,11 +73,21 @@ export default function Trials_places() {
           <Popup>
             <strong>Hexenprozess</strong><br />
             <strong>Ort:</strong> {marker.city}<br />
-            <strong>Anzahl der Prozesse:</strong> {marker.amount}
-            <br />
+            <strong>Anzahl der Prozesse:</strong> {marker.amount}<br/>
+            --------------------------------- <br/>
             {marker.dates.map((date, i) => (
               <div key={i}>
-                <strong>Jahr:</strong> {date}
+                {marker.dates[i] &&(
+                  <>
+                  <strong>Jahr:</strong> {date}<br />
+                  </>
+                )}
+                {marker.sentences[i] &&(
+                <>
+                <strong>Urteil/Hinrichtungsmethode:</strong> {marker.sentences[i]}<br/>
+                </>
+                )}
+                ---------------------------------
               </div>
             ))}
           </Popup>
