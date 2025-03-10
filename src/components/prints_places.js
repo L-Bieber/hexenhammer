@@ -23,13 +23,15 @@ export default function Prints_places() {
             const groupedMarkers = results.data.reduce((acc, row) => {
               const city = row.place?.toLowerCase().trim();
               const date = row.date?.trim();
+              const printer = row.print?.trim()
               const coordinates = places[city];
 
               if (coordinates && date) {
                 if (!acc[city]) {
-                  acc[city] = { city: capitalizeFirstLetter(city), coordinates, dates: [] };
+                  acc[city] = { city: capitalizeFirstLetter(city), coordinates, dates: [] , printers: []};
                 }
                 acc[city].dates.push(date);
+                acc[city].printers.push(printer);
               }
               return acc;
             }, {});
@@ -57,11 +59,20 @@ export default function Prints_places() {
         >
           <Popup>
             <strong>DRUCKORT</strong><br />
-            <strong>Ort:</strong> {marker.city}
-            <br />
+            <strong>Ort:</strong> {marker.city}<br />
             {marker.dates.map((date, i) => (
               <div key={i}>
-                <strong>Jahr:</strong> {date}
+                {marker.dates[i] &&(
+                  <>
+                    <strong>Jahr:</strong> {date}<br/>
+                  </>
+                )}
+                {marker.printers[i] &&(
+                  <>
+                    <strong>Drucker:</strong> {marker.printers[i]}<br/>
+                  </>
+                )}
+                  --------------------------------- <br/>
               </div>
             ))}
           </Popup>

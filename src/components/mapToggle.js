@@ -8,6 +8,7 @@ export default function MapToggle({
 }) {
   const [showCatholicInfo, setShowCatholicInfo] = useState(false);
   const [showProtestantInfo, setShowProtestantInfo] = useState(false);
+  const [showTrialsInfo, setShowTrialsInfo] = useState(false);
 
   return (
     <div className="absolute top-0 right-4 m-4 p-2 bg-white shadow-lg rounded" style={{ zIndex: 1000 }}>
@@ -17,13 +18,29 @@ export default function MapToggle({
       >
         Druckorte
       </button>
-
-      <button
-        className={`block mb-2 px-4 py-2 rounded ${showTrials ? 'bg-red-500 text-white hover:bg-red-300' : 'bg-gray-500 text-white hover:bg-gray-300'}`}
-        onClick={() => setShowTrials(!showTrials)}
-      >
-        Hexenprozesse
-      </button>
+      
+      <div className="relative flex items-center">
+        <button 
+          className={`block mb-2 px-4 py-2 rounded flex-1 ${showTrials ? 'bg-red-500 text-white hover:bg-red-300' : 'bg-gray-500 text-white hover:bg-gray-300'}`}
+          onClick={() => setShowTrials(!showTrials)}
+        >
+          Hexenprozesse
+        </button>
+        <div className="relative group ml-2">
+          <button 
+            className="bg-gray-300 text-gray-700 rounded-full w-5 h-5 text-xs font-bold flex items-center justify-center hover:bg-gray-400"
+            onClick={() => setShowTrialsInfo(!showTrialsInfo)}
+          >
+            i
+          </button>
+          {showTrialsInfo && (
+            <div className="absolute right-0 top-6 w-52 bg-white p-2 text-sm text-gray-700 shadow-lg rounded border border-gray-300 z-50">
+               Daten basieren auf Zahlen aus der <a href="http://dx.doi.org/10.5040/9798216036418" className="underline text-blue-400">Encyclopedia of Witchcraft</a> und 
+               beruhen teilweise auf Schätzungen.
+            </div>
+          )}
+        </div>
+      </div>
 
       <div className="relative flex items-center">
         <button 
