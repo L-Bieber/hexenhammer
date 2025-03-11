@@ -35,7 +35,7 @@ export const places = {
     brandenburg: [52.187320, 13.149946],
     sachsenanhalt: [52.358447, 11.408418],
     thüringen: [50.793320, 11.195942],
-    vorderösterreich: [47.693025, 8.910482],
+    vorderösterreich: [47.474556, 9.801784],
     schwäbischösterreich: [48.212709, 8.628959],
     badendurlach: [47.673324, 7.658874],
     badenbaden: [48.772053, 8.200717],
