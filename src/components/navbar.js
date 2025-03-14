@@ -13,13 +13,12 @@ export default function Navbar(){
                     <Link to="/map">
                         <button className="hover:bg-blue-400 px-4 py-2 rounded">Karte</button>
                     </Link>
-                    <Link to="/test">
+                    <Link to="/hexenhammer">
                     <button className="hover:bg-blue-400 px-4 py-2 rounded">Der Hexenhammer</button>
                     </Link>
                     <Link to="/quellen">
                     <button className="hover:bg-blue-400 px-4 py-2 rounded">Quellen</button>
                     </Link>
-                    <button className="hover:bg-blue-400 px-4 py-2 rounded">Button 4</button>
                 </div>
             </div>
         </nav>

@@ -8,6 +8,7 @@ import TextTest from './pages/textTest';
 import Impressum from './pages/impressum';
 import NotFound from './pages/notFound';
 import Sources from './pages/sources';
+import Hexenhammer from './pages/hexenhammer';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
           <Route path='/test' element={<TextTest/>}/>
           <Route path="/impressum" element={<Impressum/>}/>
           <Route path='/quellen' element={<Sources/>}/>
+          <Route path="/hexenhammer" element={<Hexenhammer/>}/>
         </Routes>
       </BrowserRouter>
     </div>
