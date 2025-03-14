@@ -7,7 +7,7 @@ new_df = pd.read_csv("public/tables/witch_trials_new.csv")
 print(original_df.head())
 print(new_df.head())
 
-# Re-read the new data with semicolon separator
+# Re-read the new data with semicolon separators
 new_df = pd.read_csv("public/tables/witch_trials_new.csv", sep=";")
 
 # Apply transformation rules
