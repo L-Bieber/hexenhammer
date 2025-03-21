@@ -3,11 +3,9 @@ import pandas as pd
 original_df = pd.read_csv("public/tables/witch_trials.csv")
 new_df = pd.read_csv("public/tables/witch_trials_new.csv")
 
-# Show the first few rows of each for inspection
 print(original_df.head())
 print(new_df.head())
 
-# Re-read the new data with semicolon separators
 new_df = pd.read_csv("public/tables/witch_trials_new.csv", sep=";")
 
 # Apply transformation rules
@@ -26,13 +24,11 @@ for col in original_df.columns:
     if col not in new_df.columns:
         new_df[col] = pd.NA
 
-# Reorder new_df to match the column order of original_df
 new_df = new_df[original_df.columns]
 
-# Combine the two datasets
+
 combined_df = pd.concat([original_df, new_df], ignore_index=True)
 
-# Show a sample of the combined DataFrame
 combined_df.sample(5)
 
 combined_df.to_csv("public/tables/witch_trials_combined.csv", index=False)

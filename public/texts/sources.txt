@@ -1,12 +1,8 @@
 Konfessionelle Einteilung der Reichskreise
 
-Die GIS-Daten zu den Reichskreisen stammen aus der Datenbank „HistoGIS“ des Austrian Centre for Digital Humanities
-and Cultural Heritage der Österreichischen Akademie der Wissenschaften, wo sie als GeoJSON Dateien verfügbar sind.  
-Die Einteilung der Reichskreise basiert auf einer Karte des Projektes „Deutsche Geschichte in Dokumenten und Bildern“ 
-des Deutschen Historischen Institutes, die die konfessionelle Verteilung innerhalb des Heiligen Römischen Reiches um das 
-Jahr 1560 darstellt.  Da die Reichskreise konfessionell keinesfalls Homogen waren musste ich ihre konfessionelle Zugehörigkeit 
-grob abschätzen. Auf die Tatsache, dass es in Reichskreisen, die ich einer Konfession zugewiesen habe, auch Gläubige der anderen 
-gab habe ich deshalb in einer Infobox auf der Karte hingewiesen. 
+Die GIS-Daten zu den Reichskreisen stammen aus der Datenbank „HistoGIS“ des Austrian Centre for Digital Humanities and Cultural Heritage der Österreichischen Akademie der Wissenschaften, wo sie als GeoJSON Dateien verfügbar sind.  Die Einteilung der Reichskreise basiert auf einer Karte des Projektes „Deutsche Geschichte in Dokumenten und Bildern“ 
+des Deutschen Historischen Institutes, die die konfessionelle Verteilung innerhalb des Heiligen Römischen Reiches um das Jahr 1560 darstellt.  
+Da die Reichskreise konfessionell keinesfalls Homogen waren musste ich ihre konfessionelle Zugehörigkeit grob abschätzen. Auf die Tatsache, dass es in Reichskreisen, die ich einer Konfession zugewiesen habe, auch Gläubige der anderen gab habe ich deshalb in einer Infobox auf der Karte hingewiesen. 
 
 Piechl, A.: Holy Roman Empire Imperial Circles 1555, basierend auf: Kunz, A.: Reichskreise 1555, Wien. https://histogis.acdh.oeaw.ac.at/shapes/source/detail/215. 
 
