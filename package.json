@@ -5,6 +5,7 @@
   "dependencies": {
     "@vercel/analytics": "^1.5.0",
     "cra-template": "1.2.0",
+    "css-select": "^6.0.0",
     "glob": "^13.0.0",
     "leaflet": "^1.9.4",
     "nth-check": "^2.1.1",
